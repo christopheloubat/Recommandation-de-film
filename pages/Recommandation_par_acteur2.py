@@ -8,7 +8,7 @@ from io import TextIOWrapper
 @st.cache_data
 def load_data():
 # Chemin vers le fichier ZIP contenant le fichier CSV
-    chemin_fichier_zip = r'C:\Users\sioph\Desktop\Recommandation de film\Recommandation-de-film\Base_prete.zip'
+    chemin_fichier_zip = r'.\Base_prete.zip'
 
 # Nom du fichier CSV à l'intérieur du ZIP
     nom_fichier_csv = 'Base_prete.csv'
