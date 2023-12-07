@@ -5,7 +5,7 @@ import csv
 from io import TextIOWrapper
 
 # Chemin vers le fichier ZIP contenant le fichier CSV
-chemin_fichier_zip = r'..\Base_prete.zip'
+chemin_fichier_zip = r'.\Base_prete.zip'
 
 # Nom du fichier CSV à l'intérieur du ZIP
 nom_fichier_csv = 'Base_prete.csv'
