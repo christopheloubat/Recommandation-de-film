@@ -8,17 +8,8 @@ import csv
 from io import TextIOWrapper
 
 # Chemin vers le fichier ZIP contenant le fichier CSV
-chemin_fichier_zip = r'./Base_prete.zip'
-
-# Nom du fichier CSV à l'intérieur du ZIP
-nom_fichier_csv = 'Base_prete.csv'
-
-# Ouvrir le fichier ZIP en mode lecture
-with zipfile.ZipFile(chemin_fichier_zip, 'r') as zip_ref:
-    # Extraire le fichier CSV en mémoire
-    with zip_ref.open(nom_fichier_csv) as csv_file:
-        # Lire le contenu CSV à l'aide de csv.reader
-        df1 = pd.read_csv(TextIOWrapper(csv_file, 'utf-8'))
+zf1 = zipfile.ZipFile( './Base_prete.zip')
+df1 = pd.read_csv(zf1.open('Base_prete.csv'))
 
 
 # Sélection des colonnes incluant des nombres
