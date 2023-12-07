@@ -4,5 +4,3 @@ scikit_learn
 streamlit==1.28.2
 seaborn
 matplotlib
-io
-csv
